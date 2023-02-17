@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>PreEntrega2</title>
+</head>
+<body>
+    <div class="container">
+        <div class="contenedor">
+            <h1 class="Titulo">JavaScript</h1>
+        <div class="parrafos">
+            <h2>¿Cuales son las Variables de Javascript?</h2>
+            <p>Hay 5 tipos de variables : tipo texto(string), número, booleanas , objetos y funciones </p>
+                <div class="variablesjs">
+                    <ol>
+                        <li>String
+                            <p>Los cadena literales se pueden especificar usando comillas simples o dobles,<br> que se tratan de manera idéntica, o usando el carácter de comilla invertida</p>
+                            <p class="ejemplos"> <span class="colorn">const</span> nombre = "Juan";<br>
+                                    <span class="colorn">const</span> apellido = "Pérez";<br>
+                                    <span class="colorn">const</span> nombreCompleto = nombre + " " + apellido;<br>
+                                    <span class="colora">console.log</span>(nombreCompleto); // "Juan Pérez"</p>
+                        </li>
+                        <li>Numero    
+                            <p class="ejemplos"><span class="colorn">const</span> num1 = 10;<br>
+                                <span class="colorn">const</span> num2 = 5;<br>
+                                <span class="colorn">const</span> suma = num1 + num2;<br>
+                                <span class="colora">console.log</span>(suma)</p>
+                        </li>
+                        <li>Booleanos 
+                            <p>Una variable es booleana si se le asigna como contenido true ó false.</p>
+                            <p class="ejemplos"><span class="colorn">const</span> num1 = 10;<br>
+                               <span class="colorn">const</span> num2 = 5;<br>
+                               <span class="colorn">const</span> esMayorQue = num1 > num2;<br>
+                                <span class="colora">console.log</span>(esMayorQue);</p>  
+                        </li>
+                        <li>Objetos 
+                            <p>Un objeto es un entidad independiente con propiedades y tipos.</p>
+                            <p class="ejemplos">var persona = {<br>
+                                nombre: "Juan",<br>
+                                apellido: "Pérez",<br>
+                                edad: 30,<br>
+                                <span class="colora">console.log</span>(persona.nombre); // Juan<br>
+                                <span class="colora">console.log</span>(persona.apellido);// Pérez</p>
+                        </li>
+                        <li>Funciones
+                            <p> Utilizamos la palabra clave function seguida de un espacio y, a continuación, el nombre de la función. <br>Después de definir su nombre, escribimos entre paréntesis las variables o parámetros que queremos para dicha función.</p>
+                            <p class="ejemplos">function saludar(nombre)<br> {
+                                <span class="colora">console.log</span>("¡Hola " + nombre + "!")}</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="seccion2">
+
+    <div class="Ramdom">
+        <h2>Generar Numero aleatorio del 1 al 50</h2>
+        <button onclick="generarNumeroAleatorio()">Generar</button>
+        <div id="resultado" class=""></div>
+    </div>
+
+    <div class="length">
+        <h2>Limite de 100 palabras</h2>
+        <input type="text" id="mensaje" maxlength="100">
+        <p>Caracteres restantes: <span id="contador"></span></p>
+    </div>
+
+    <div class="carrito">
+        <h3>Productos Para llevar</h3>
+        <div class="cosas">
+        <div class="productos">
+            <img src="./Img/camisa.png" alt="articulo1">
+            <h3>Camisa</h3>
+            <b>$1000</b><br>
+            <button id="comprar">Comprar</button>
+        </div>
+        <div class="productos">
+            <img src="./Img/pantalon.png" alt="articulo2">
+            <h3>Pantalon</h3>
+            <b>$1500</b><br>
+            <button id="comprar">Comprar</button>
+        </div>
+        <div class="productos">
+            <img src="./Img/polo.png" alt="articulo3">
+            <h3>Polo</h3>
+            <b>$1900</b><br>
+            <button id="comprar">Comprar</button>
+        </div>
+        <div class="productos">
+            <img src="./Img/chompa.png"  alt="articulo4">
+            <h3>Chompa</h3>
+            <b>$2000</b><br>
+            <button id="comprar">Comprar</button>
+        </div>
+        <div class="productos">
+            <img src="./Img/guantes.png"  alt="articulo5">
+            <h3>Guantes</h3>
+            <b>$3000</b><br>
+            <button id="comprar">Comprar</button>
+        </div>
+        <div class="productos">
+            <img src="./Img/short.png" alt="articulo6">
+            <h3>Short</h3>
+            <b>$2650</b><br>
+            <button id="comprar">Comprar</button>
+          </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

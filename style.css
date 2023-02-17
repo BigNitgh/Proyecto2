@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 1.3rem;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: antiquewhite;
+}
+
+
+.Titulo{
+    display: flex;
+    justify-content: center;
+}
+.variablesjs li{
+    margin: 13px 20px;
+    font-size: 1.3rem;
+}
+
+.contenedor{
+    background-color: azure;
+    display: grid;
+    justify-content: center;
+}
+
+.ejemplos{
+    background-color: black ;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.colora{
+    color: rgba(0, 113, 243, 0.751);
+}
+
+.colorn{
+    color: rgb(208, 58, 21);
+}
+
+.red{
+    background-color: red;
+}
+
+.productos img{
+    height: 250px;
+    width: auto;
+}
+
+.cosas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
